@@ -20,6 +20,6 @@ with open(args.filename,'r') as file:
 	f = file.readlines()
 
 for url in f:
-    uon = Spider(url)
-    uon.get_content()
+    spider = Spider(url)
+    spider.get_links()
 
