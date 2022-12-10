@@ -4,7 +4,9 @@
 import requests
 from bs4 import BeautifulSoup
 import csv
-import re
+images = bs.find_all('img', {'src':re.compile('.jpg')})
+for image in images: 
+    print(image['src']+'\n')
 import threading
 
 class Spider():
